@@ -1,2 +1,2 @@
 # DSA-notes
-Notes for 
+Notes for Data structures and Algorithms in C++
