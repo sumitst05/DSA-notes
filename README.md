@@ -28,6 +28,14 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Time and space complexity analysis of array operations
 - Array implementation of stacks and queues
 
+### Strings
+
+- Introduction to strings
+- Operations on strings (concatenation, comparison, searching, etc.)
+- String manipulation algorithms (reversal, palindrome check, anagram check, etc.)
+- Pattern matching algorithms (Naive, Rabin-Karp, Knuth-Morris-Pratt, etc.)
+- Time and space complexity analysis of string algorithms
+
 ### Linked Lists
 
 - Introduction to linked lists
