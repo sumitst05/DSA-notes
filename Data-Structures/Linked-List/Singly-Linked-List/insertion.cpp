@@ -78,12 +78,22 @@ void printList(Node* &head) {
 
 int main() {
     Node* head = NULL;  // empty linked-list
-    
+
+    cout << "Before Insertion: \n";
+    printList(head);
+
     // Function calls
     insertAtHead(head, 1);
-    insertAfter(head, 1, 2);
-    insertAtEnd(head, 3);
+    cout << "After inserting at head: \n";
+    printList(head);
 
+    insertAfter(head, 1, 2);
+    cout << "After inserting at index 1: \n";
+    printList(head);
+
+    insertAtEnd(head, 3);
+    cout << "After inserting at end: \n";
     printList(head);    
+
     return 0;
 }
