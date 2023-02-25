@@ -26,7 +26,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Operations on arrays (insertion, deletion, searching, etc.)
 - 1D and 2D arrays
 - Time and space complexity analysis of array operations
-- Array implementation of stacks and queues
 
 ### Strings
 
@@ -44,7 +43,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Circular linked lists
 - Operations on linked lists (insertion, deletion, searching, etc.)
 - Time and space complexity analysis of linked list operations
-- Linked list implementation of stacks and queues
 
 ### Stacks and Queues
 
@@ -64,7 +62,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Tree traversal (preorder, inorder, postorder, level order)
 - Operations on trees (insertion, deletion, searching, etc.)
 - Time and space complexity analysis of tree operations
-- Applications of trees
 
 ### Graphs
 
