@@ -8,15 +8,15 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
   - [Arrays](#Arrays)
   - [Strings](#Strings)
   - [Linked Lists](#Linked-Lists)
-  <!-- - [Stacks and Queues](#stacks-and-queues) -->
-  <!-- - [Trees](#trees) -->
-  <!-- - [Graphs](#graphs) -->
+  - [Stacks and Queues](#stacks-and-queues)
+  - [Trees](#trees)
+  - [Graphs](#graphs)
 - [Algorithms](#algorithms)
-  <!-- - [Searching](#searching) -->
-  <!-- - [Sorting](#sorting) -->
-  <!-- - [Recursion](#recursion) -->
-  <!-- - [Dynamic Programming](#dynamic-programming) -->
-  <!-- - [Greedy Algorithms](#greedy-algorithms) -->
+  - [Searching](#searching)
+  - [Sorting](#sorting)
+  - [Recursion](#recursion)
+  - [Dynamic Programming](#dynamic-programming)
+  - [Greedy Algorithms](#greedy-algorithms)
 
 ## Data Structures
 
@@ -32,7 +32,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Introduction to strings
 - Operations on strings (concatenation, comparison, searching, etc.)
 - String manipulation algorithms (reversal, palindrome check, anagram check, etc.)
-- Pattern matching algorithms (Naive, Rabin-Karp, Knuth-Morris-Pratt, etc.)
 - Time and space complexity analysis of string algorithms
 
 ### Linked Lists
