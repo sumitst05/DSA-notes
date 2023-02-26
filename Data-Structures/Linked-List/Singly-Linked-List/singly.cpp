@@ -1,31 +1,3 @@
-/*
- * A Linked List is a linear data structure made up of nodes, where each node is a different element. 
- * Unlike Arrays, Linked List elements are not stored at a contiguous location.
- * The elements are linked using pointers.
- *
- * The first node is called the 'head' of the linked list. If the linked list is empty, then the value of the head points to NULL. 
- * The last element of a linked list always points towards NULL
- * Each node in a list consists of at least two parts: 
- * -> A Data Item (we can store integers, strings, or any type of data).
- * -> Pointer (Or Reference) to the next node (connects one node to another) or An address of another listNode
- *
- *  Types of linked lists:
- *  1. Singly Linked List: Simplest type of linked list in which every node contains some data and a pointer to the next node of the same data type.
- *      Eg:- 1->2->3->4->5->NULL
- *           ^              
- *           |
- *         [head]
- *  2. Doubly Linked List: Also known as a two-way linked list. Is a more complex type of linked list that contains a pointer to the next as well as the previous node in sequence.
- *      Eg:- 1<=>2<=>3<=>4<=>5->NULL
- *           ^
- *           |
- *         [head]
- *  3. Circular Linked List: A circular linked list is that in which the last node contains the pointer to the first node of the list. 
- *      Eg:- 1->2->3->4->5-|
- *           ^             |  
- *           |____________-|
- */
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,6 +18,14 @@ class ListNode {
         next = NULL;
     }
 };
+
+// Function to push data in the linked-list
+void push(Node* &head, int x) {
+    Node* n = new Node();   //Allocate new node
+    n->data = x;    // set data of node as x
+    n->next = head; // make new node's next as head
+    head = n;   // move head to point to new node
+}
 
 // Prints the nodes(elements) of the list
 void printList(Node *n) {
@@ -83,5 +63,12 @@ int main() {
     
     cout << "Linked List: \n";
     printList(head);    //prints the list
+    
+    // Adding nodes to linked-list using push() 
+    push(head, 4);
+    push(head, 5);
+
+    printList(head);
+
     return 0;
 }

@@ -67,6 +67,7 @@ void insertAtEnd(Node* head, int x) {
     // Set the last node's next field to point to the new node
     temp->next = n;
 }
+
 void printList(Node* &head) {
     Node *temp = head;
     while(temp != NULL) {
