@@ -8,15 +8,15 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
   - [Arrays](#Arrays)
   - [Strings](#Strings)
   - [Linked Lists](#Linked-Lists)
-  <!-- - [Stacks and Queues](#stacks-and-queues) -->
-  <!-- - [Trees](#trees) -->
-  <!-- - [Graphs](#graphs) -->
+  - [Stacks and Queues](#stacks-and-queues)
+  - [Trees](#trees)
+  - [Graphs](#graphs)
 - [Algorithms](#algorithms)
-  <!-- - [Searching](#searching) -->
-  <!-- - [Sorting](#sorting) -->
-  <!-- - [Recursion](#recursion) -->
-  <!-- - [Dynamic Programming](#dynamic-programming) -->
-  <!-- - [Greedy Algorithms](#greedy-algorithms) -->
+  - [Searching](#searching)
+  - [Sorting](#sorting)
+  - [Recursion](#recursion)
+  - [Dynamic Programming](#dynamic-programming)
+  - [Greedy Algorithms](#greedy-algorithms)
 
 ## Data Structures
 
