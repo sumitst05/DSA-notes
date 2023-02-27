@@ -1,5 +1,5 @@
 /* 
- * Insertion in a linked-list can be done in 3 ways:
+ * Insertion in a linked-list can be done in following ways:
  * 1. At beginning: Inserting the node before the head node
  * 2. At end: Inserting the node at the end of the linked-list
  * 3. At a specified position: Inserting the node after a specified node
