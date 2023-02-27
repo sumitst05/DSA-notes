@@ -1,3 +1,9 @@
+/*
+* Deletion in a DLL can be done in the following ways:
+* 1. Deletion at head
+* 2. Deletion after a specific node
+* 3. Deletion at end
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
