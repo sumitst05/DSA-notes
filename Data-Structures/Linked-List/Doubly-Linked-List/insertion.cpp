@@ -60,23 +60,23 @@ void insertAfter(Node* prevNode, int x) {
 
 // This function appends a new Node with the given value to the end of a doubly linked list
 void append(Node* &head, int x) {
-    // Allocate a new Node with the given value
-    Node* newNode = new Node(x);
-    // Find the last Node in the list
-    Node* last = head; 
-    while (last->next != NULL) {
-        last = last->next;
-    }
-    // Add the new Node to the end of the list
-    last->next = newNode;
-    newNode->prev = last;
-    newNode->next = NULL;
-    // If the list was originally empty, make the new Node the head of the list
-    if (head == NULL) {
-        newNode->prev = NULL;
-        head = newNode;
+    // Allocate memory for the new node and set its value to 'x'
+    Node* n = new Node(x);
+    // Create a temporary node and initialize it to the first node of the linked list
+    Node* temp = head;
+    // If the linked list is empty, set the first node to be the new node and return
+    if(head == NULL) {
+        head = n;
         return;
     }
+    // Traverse the linked list until the last node is reached
+    while(temp->next != NULL) {
+        temp = temp->next;
+    }
+    // Set the next pointer of the last node to point to the new node
+    temp->next = n;    
+    // Set the previous pointer of the new node to point to the last node
+    n->prev = temp;
 }
 
 void printList(Node *head) {
@@ -84,28 +84,30 @@ void printList(Node *head) {
     Node *nb = NULL;    // Node pointer for backward traversal
 
     cout << "  Traversing forward:- ";
-    cout << "NULL <=> ";
+    cout << "NULL <- ";
     // Loop through the list while the current Node pointer is not NULL
     while(nf != NULL) {
         // Print the data of the current Node
-        cout << nf->data << " <=> ";
+        cout << nf->data;
         // Set the new backward Node pointer to the current Node
         nb = nf;
+        if(nf->next != NULL) cout << " <=> ";
         // Move the current Node pointer to the next Node in the list
         nf = nf->next;
     }
-    cout << "NULL" << '\n';
+    cout << " -> NULL" << '\n';
 
     cout << "  Traversing backwards:- ";
-    cout << "NULL <=> ";
+    cout << "NULL <- ";
     // Loop through the list while the backward Node pointer is not NULL
     while(nb != NULL) {
         // Print the data of the backward Node
-        cout << nb->data << " <=> ";
+        cout << nb->data;
+        if(nb->prev != NULL) cout << " <=> ";
         // Move the backward Node pointer to the previous Node in the list
         nb = nb->prev;
     }
-    cout << "NULL " << '\n';
+    cout << " -> NULL" << '\n';
 }
 
 int main() {
