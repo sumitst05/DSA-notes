@@ -44,6 +44,7 @@ void printList(Node *head) {
     cout << " -> NULL" << '\n';
 }
 
+// Funciton to delete head of a DLL
 void deleteHead(Node* &head) {
     if (head == NULL) {
         // empty list, nothing to delete
@@ -61,6 +62,7 @@ void deleteHead(Node* &head) {
     delete(n);
 }
 
+// Funciton to delete a specific in a DLL
 void deleteAfter(Node* node) {
     // If the given node or its next node is NULL, there is nothing to delete, so return
     if(node == NULL || node->next == NULL) {
@@ -77,6 +79,7 @@ void deleteAfter(Node* node) {
     delete(n);
 }
 
+// Funciton to delete node at end in a DLL
 void deleteEnd(Node* &head) { 
     // If the list is empty or has only one node
     if (head == NULL || (head)->next == NULL) 
