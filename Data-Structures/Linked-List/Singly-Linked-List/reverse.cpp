@@ -62,7 +62,6 @@ Node* reverseRecursive(Node* current, Node* previous = NULL) {
     return reverseRecursive(next, current);
 }
 
-// Function to reverse a linked list using stack
 void reverseWithStack(Node* &head) {
     // Create an empty stack to store the nodes of the linked list
     stack<Node*> nodeStack;

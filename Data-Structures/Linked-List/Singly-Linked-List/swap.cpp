@@ -11,7 +11,7 @@ public:
     }
 };
 
-void append(Node* head, int x) {
+void append(Node* &head, int x) {
     Node* node = new Node(x);
     if(head == NULL) {
         head = node;
@@ -65,7 +65,7 @@ void swap(Node* &head, int a, int b) {
         head = currA;
     }
 
-    Node *temp = currB->next;  // Store the next node of the node containing b
+    Node *temp = currB->next;  // Store the next node of the node containing 
     currB->next = currA->next;  // Set the next node of the node containing b to the next node of the node containing a
     currA->next = temp;  // Set the next node of the node containing a to the next node of the node containing b
 }

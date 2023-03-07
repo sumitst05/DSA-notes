@@ -2,6 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Node creation
 class Node {
 public:
     int data;
