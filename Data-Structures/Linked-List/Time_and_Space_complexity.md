@@ -70,17 +70,17 @@
 # Circular Linked List:
 - Insertion:
     - Time Complexity:
-        -
-        -
-        -
-    - Space Complexity:
+        - Insertion at the beginning of a CLL takes constant time O(1), as it involves changing the pointers of the head node to point to the new node, and the last node to point to the new head node.
+        - Insertion at the end of a CLL takes linear time O(n), as we have to traverse the list to reach the last node and then perform the insertion operation by changing the pointers of the last node and the new node.
+        - Insertion at a specific position in a CLL takes linear time O(n), as we have to traverse the list to reach the position where we want to insert the new node and then perform the insertion operation.
+    - Space Complexity: The space complexity for insertion in a CLL is constant O(1), as we only need to allocate memory for the new node.
 
 - Deletion:
     - Time Complexity:
-        -
-        -
-        -
-    - Space Complexity:
+        - Deletion at the beginning of a CLL takes constant time O(1), as it involves changing the pointers of the head node to point to the next node and the last node to point to the new head node.
+        - Deletion at the end of a CLL takes linear time O(n), as we have to traverse the list to reach the last node and the second last node and then perform the deletion operation by changing the pointers of the last node and the second last node.
+        - Deletion at a specific position in a CLL takes linear time O(n), as we have to traverse the list to reach the position of the node to be deleted and then perform the deletion operation.
+    - Space Complexity: The space complexity for deletion in a CLL is constant O(1), as we only need to free the memory of the deleted node.
 
 - Searching: 
     - Time Complexity: Searching for an element in a CLL takes linear time O(n), as we have to traverse the entire list once to find the element.
