@@ -37,6 +37,65 @@
 
     - Space Complexity: The space complexity for reversing a singly linked list is O(1), as the algorithm requires only constant extra space to keep track of a few temporary variables.
 
+
+# Doubly Linked List:
+- Insertion: 
+    - Time Complexity: 
+        - Insertion at the beginning of a DLL takes constant time O(1), as it involves changing the pointers of the head node to point to the new node, which can be done in constant time.
+        - Insertion at the end of a DLL takes constant time O(1), as we can directly change the pointers of the last node to point to the new node.
+        - Insertion at a specific position in a DLL takes linear time O(n), as we have to traverse the list to reach the position where we want to insert the new node and then perform the insertion operation.
+    - Space Complexity: The space complexity for insertion in a DLL is constant O(1), as we only need to allocate memory for the new node.
+    
+- Deletion: 
+    - Time Complexity: 
+        - Deletion at the beginning of a DLL takes constant time O(1), as it involves changing the pointers of the head node to point to the next node and then freeing the memory of the deleted node.
+        - Deletion at the end of a DLL takes constant time O(1), as we can directly change the pointers of the second last node to point to NULL and then free the memory of the deleted node.
+        - Deletion at a specific position in a DLL takes linear time O(n), as we have to traverse the list to reach the position of the node to be deleted and then perform the deletion operation.
+    -Space Complexity:  The space complexity for deletion in a DLL is constant O(1), as we only need to free the memory of the deleted node.
+    
+- Searching: 
+    -Time Complexity: Searching for an element in a DLL takes linear time O(n), as we have to traverse the entire list to find the element.
+    - Space Complexity: The space complexity for searching in a DLL is constant O(1), as we only need to store a temporary variable and the current node.
+
+- Swapping:
+    - Time Complexity: 
+        - Swapping two adjacent nodes in a DLL takes constant time O(1), as we only need to change the pointers of the adjacent nodes.
+        - Swapping two non-adjacent nodes in a DLL takes constant time O(1), as we only need to change the pointers of the nodes involved in the swap.
+    - Space Complexity: The space complexity for swapping in a DLL is constant O(1), as we only need to store a temporary variable, and the nodes involved in the swap.
+
+- Reversing:
+    - Time Complexity: Reversing a DLL takes linear time O(n), as we have to traverse the entire list and change the pointers of each node to point to its previous node.
+    - Space Complexity: The space complexity for reversing a DLL is constant O(1), as we only need to store a few temporary variables.
+
+# Circular Linked List:
+- Insertion:
+    - Time Complexity:
+        -
+        -
+        -
+    - Space Complexity:
+
+- Deletion:
+    - Time Complexity:
+        -
+        -
+        -
+    - Space Complexity:
+
+- Searching: 
+    - Time Complexity: Searching for an element in a CLL takes linear time O(n), as we have to traverse the entire list once to find the element.
+    - Space Complexity: The space complexity for searching in a CLL is constant O(1), as we only need to store a temporary variable and the current node.
+
+- Swapping:
+    - Time Complexity: 
+        - Swapping two adjacent nodes in a CLL takes constant time O(1), as we only need to change the pointers of the adjacent nodes.
+        - Swapping two non-adjacent nodes in a CLL takes linear time O(n), as we have to traverse the entire list once to find the nodes to be swapped and then perform the swap operation.
+    - Space Complexity: The space complexity for swapping in a CLL is constant O(1), as we only need to store a few temporary variables and the nodes involved in the swap.
+
+- Reversing:
+    - Time Complexity: Reversing a CLL takes linear time O(n), as we have to traverse the entire list once and change the pointers of each node to point to its previous node.
+    - Space Complexity: The space complexity for reversing a CLL is constant O(1), as we only need to store a few temporary variables.
+
 **Note**: It's worth noting that the time and space complexities mentioned here are for the basic implementation of these operations in an array. The actual complexities can vary based on the specific implementation and the data being processed.
 
 
