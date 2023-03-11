@@ -44,13 +44,19 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Operations on linked lists (insertion, deletion, searching, etc.)
 - Time and space complexity analysis of linked list operations
 
-### Stacks and Queues
+### Stacks
 
-- Introduction to stacks and queues
+- Introduction to stacks
 - Operations on stacks (push, pop, peek, etc.)
+- Array and linked list implementation of stacks
+- Applications of stacks
+
+### Queues
+
+- Introduction to stacks
 - Operations on queues (enqueue, dequeue, peek, etc.)
-- Array and linked list implementation of stacks and queues
-- Applications of stacks and queues
+- Array and linked list implementation of queues
+- Applications of stacks
 
 ### Trees
 
