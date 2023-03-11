@@ -11,17 +11,19 @@ The last element of a linked list always points towards NULL
 
 ## Types of linked lists:
   1. Singly Linked List: Simplest type of linked list in which every node contains some data and a pointer to the next node of the same data type.
-      Eg:- 1->2->3->4->5->NULL
-           ^              
-           |
-         [head]
+      Eg:- 
+1->2->3->4->5->NULL
+^              
+|
+[head]
   2. Doubly Linked List: Also known as a two-way linked list. Is a more complex type of linked list that contains a pointer to the next as well as the previous node in sequence.
-       Eg:- NULL<-1<=>2<=>3<=>4<=>5->NULL
-                  ^
-                  |
-                [head]
+       Eg:- 
+NULL<-1<=>2<=>3<=>4<=>5->NULL
+^
+|
+[head]
    3. Circular Linked List: A circular linked list is that in which the last node contains the pointer to the first node of the list. 
        Eg:- 
-       1->2->3->4->5-|
-            ^             |  
-            |_____________|
+1->2->3->4->5-|
+^             |  
+|_____________|
