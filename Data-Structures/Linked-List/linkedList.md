@@ -21,6 +21,7 @@ The last element of a linked list always points towards NULL
                   |
                 [head]
    3. Circular Linked List: A circular linked list is that in which the last node contains the pointer to the first node of the list. 
-       Eg:- 1->2->3->4->5-|
+       Eg:- 
+       1->2->3->4->5-|
             ^             |  
             |_____________|
