@@ -9,4 +9,8 @@
 - Stacks can be implemented in two ways:-
     - Using arrays: The array implementation is the simplest and the most widely used implementation of a stack. 
     - Using linked lists: The linked list implementation of a stack is more flexible and can be used when the size of the stack is unknown or unpredictable.
+- STL stack: 
+    - STL stack is another method of implementing a stack in C++. The STL (Standard Template Library) provides a pre-defined stack container that can be used to implement the stack data structure. The stack container in the STL is a part of the container library and provides various methods to perform the stack operations like push, pop, and top.
+    - Using STL stack is a convenient method of implementing the stack as it saves the time and effort of writing the entire implementation code for the stack. Also, the STL stack is a type-safe container, which makes it more efficient and reliable.
+
 - Uses: Stacks are used in many algorithms and applications, such as expression evaluation, backtracking, recursion, and memory management. They are also used in many programming languages to implement functions, as function calls can be easily represented using a stack.
