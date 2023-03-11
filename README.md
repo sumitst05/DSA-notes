@@ -111,7 +111,7 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 ### Dynamic Programming
 
 - Introduction to dynamic programming
-- Memoization and tabulation
+- Memorization and tabulation
 - Top-down and bottom-up approaches
 - Examples of dynamic programming problems (knapsack problem, longest common subsequence, etc.)
 - Time and space complexity analysis of dynamic programming algorithms
