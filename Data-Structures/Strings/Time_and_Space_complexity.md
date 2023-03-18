@@ -30,4 +30,4 @@
     - Time complexity: O(n log n), where n is the length of the string.
     - Space complexity: O(n) - We create new strings that contain only the alphabetic characters from the input strings, which have the same length as the input strings. We also need to allocate memory for the sorted strings, which also have length n.
 
-Note: It's worth noting that the time and space complexities mentioned here are for the basic implementation of these operations on strings. The actual complexities can vary based on the specific implementation and the data being processed.
+**Note**: It's worth noting that the time and space complexities mentioned here are for the basic implementation of these operations in an array. The actual complexities can vary based on the specific implementation and the data being processed.
