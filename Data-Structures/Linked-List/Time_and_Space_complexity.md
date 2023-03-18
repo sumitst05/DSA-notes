@@ -96,7 +96,7 @@
     - Time Complexity: Reversing a CLL takes linear time O(n), as we have to traverse the entire list once and change the pointers of each node to point to its previous node.
     - Space Complexity: The space complexity for reversing a CLL is constant O(1), as we only need to store a few temporary variables.
 
-**Note**: It's worth noting that the time and space complexities mentioned here are for the basic implementation of these operations in an array. The actual complexities can vary based on the specific implementation and the data being processed.
+**Note**: It's worth noting that the time and space complexities mentioned here are for the basic implementation of these operations. The actual complexities can vary based on the specific implementation and the data being processed.
 
 
 
