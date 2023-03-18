@@ -47,3 +47,5 @@
 | top         | O(1)                           | O(1)             |
 | empty       | O(1)                           | O(1)             |
 | size        | O(1)                           | O(1)             |
+
+Note: It's worth noting that the time and space complexities mentioned here are for the basic implementation of these operations in an array. The actual complexities can vary based on the specific implementation and the data being processed.
