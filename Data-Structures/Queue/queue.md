@@ -1,7 +1,6 @@
 # Queue:
-
 - A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. It is an ordered list of elements in which insertions take place at one end called the rear, and deletions take place at the other end called the front. 
-- A queue uses an encapsulated object of deque (Double ended queue) by defaule or list (sequential container class) as its underlying container, providing a specific set of member functions to access its elements. 
+- A queue uses an encapsulated object of deque (by default) or list (sequential container class) as its underlying container, providing a specific set of member functions to access its elements. 
 
 ## Operations:
 - A queue has two primary operations, enqueue and dequeue. 
