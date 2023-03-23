@@ -4,9 +4,8 @@ using namespace std;
 #define MAX 1000 // Maximum size of stack
 
 class Stack {
-    int top; // Index of the top element in the stack
-
 public:
+    int top; // Index of the top element in the stack
     int a[MAX]; // Array to store the elements of the stack
 
     Stack() { top = -1; } // Constructor to initialize the stack
