@@ -15,7 +15,7 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
   - [Heaps](#heaps)
   - [Hash Tables](#hash-tables)
   - [Tries](#tries)
-  - [Algorithms](#algorithms)
+- [Algorithms](#algorithms)
   - [Searching](#searching)
   - [Sorting](#sorting)
   - [Recursion](#recursion)
