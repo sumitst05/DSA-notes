@@ -13,7 +13,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
   - [Trees](#trees)
   - [Graphs](#graphs)
   - [Hash Tables](#hash-tables)
-  - [Tries](#tries)
 - [Algorithms](#algorithms)
   - [Searching](#searching)
   - [Sorting](#sorting)
