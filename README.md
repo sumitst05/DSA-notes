@@ -67,6 +67,8 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Binary search trees
 - AVL trees
 - Heap trees
+- Red-Black Trees
+- B-Tree
 - Tree traversal (preorder, inorder, postorder, level order)
 - Operations on trees (insertion, deletion, searching, etc.)
 - Time and space complexity analysis of tree operations
