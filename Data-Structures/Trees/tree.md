@@ -4,35 +4,39 @@ A tree is a non-linear data structure that is used to represent hierarchical rel
 
 ## Types of Trees
 
-### Binary Tree
+#### Binary Tree
 
 A binary tree is a type of tree where each node has at most two child nodes. The left child node is typically smaller than the parent node, and the right child node is typically larger.
 
-### Ternary Tree
+#### Ternary Tree
 
 A ternary tree is a type of tree where each node has at most three child nodes. 
 
-### Binary Search Tree
+#### Binary Search Tree
 
 A binary search tree is a type of binary tree where the left child node of each node has a value less than or equal to the parent node, and the right child node has a value greater than or equal to the parent node. This property allows for efficient searching and sorting operations.
 
-### Ternary Search Tree
+#### Ternary Search Tree
 
 A Ternary Search Tree is a type of tree that is used for fast searching and sorting of strings. It is similar to a binary search tree but has three children for each node instead of two.
 
-### Heap Tree
+#### Heap Tree
 
 A Heap tree is a type of tree that is used for heap sorting. It is a complete binary tree where the value of each node is greater than or equal to the values of its children. In a max heap, the root node has the largest value, while in a min heap, the root node has the smallest value.
 
-### AVL Tree
+#### Segment Tree
+Segment trees are a type of tree data structure that are used to efficiently perform range queries and updates on an array. They are particularly useful when the array is static (i.e., the elements in the array do not change), and there are many queries and updates that need to be performed on different ranges of the array.
+
+
+#### AVL Tree
 
 An AVL tree is a self-balancing binary search tree where the height of the left and right subtrees of each node differs by at most one. This property ensures that the tree remains efficient for various operations, such as searching and inserting.
 
-### Red-Black Tree
+#### Red-Black Tree
 
 A red-black tree is a self-balancing binary search tree that uses color-coded nodes to maintain balance. It ensures that the tree remains balanced by performing rotations and color changes on nodes.
 
-### B-Tree
+#### B-Tree
 
 A B-tree is a self-balancing tree data structure that is commonly used in databases and file systems. It can handle large amounts of data and provides fast access times by reducing the number of disk accesses required to find a record.
 
