@@ -8,8 +8,7 @@ public:
 	Node* right;
 	// Val is the key or the value that
 	// has to be added to the data part
-	Node(int val)
-	{
+	Node(int val) {
 		data = val;
 		// Left and right child for node
 		// will be initialized to null
@@ -18,8 +17,18 @@ public:
 	}
 };
 
-int main()
-{
+// function to print the binary tree using inorder traversal
+void printTree(Node* node) {
+    if (node == NULL) return;
+
+    printTree(node->left);
+
+    cout << node->data << " ";
+
+    printTree(node->right);
+}
+
+int main() {
 	/*create root*/
 	Node* root = new Node(1);
 
@@ -32,23 +41,35 @@ int main()
 	root->right = new Node(3);
 
 	/* 2 and 3 become left and right children of 1
-	           1
-	         /    \
+	            1
+	         /     \
 	         2      3
 	      /    \  /   \
 	    NULL NULL NULL NULL
 	*/
 	root->left-> left = new Node(4);
 	/* 4 becomes left child of 2
-    		  1
-    	    /   \
+    		   1
+    	    /    \
     	   2	  3
         /    \  /   \
     	4 NULL NULL NULL
        / \
     NULL NULL
-
 	*/
+	root->left->right = new Node(5);
+	/* 5 becomes right child of 2
+    		   1
+    	    /    \
+    	   2	  3
+        /    \  /   \
+    	4    5 NULL NULL
+       / \
+    NULL NULL
+	*/
+
+	printTree(root); // prints the tree using inorder traversal
+
 	return 0;
 }
 
