@@ -6,12 +6,10 @@ public:
 	int data;
 	Node* left;
 	Node* right;
-	// Val is the key or the value that
-	// has to be added to the data part
+	// Val is the value or the key that has to be added to the data part
 	Node(int val) {
 		data = val;
-		// Left and right child for node
-		// will be initialized to null
+		// Left and right child for Node will be initialized to null
 		left = NULL;
 		right = NULL;
 	}
