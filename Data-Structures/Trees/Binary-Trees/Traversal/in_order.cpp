@@ -14,9 +14,9 @@ public:
     }
 };
 
-// 1. Traverse the left subtree, i.e., call Inorder(left-subtree)
+// 1. Traverse the left subtree
 // 2. Visit the root. 
-// 3. Traverse the right subtree, i.e., call Inorder(right-subtree)
+// 3. Traverse the right subtree
 void inOrderTraversal(Node* root) {
     if (root == NULL) {
         return;
