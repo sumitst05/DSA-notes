@@ -20,7 +20,7 @@ void levelOrderTraversal(Node* root) {
     }
     // We are using a queue to store the address of the nodes
     queue<Node*> q;  
-    // Pushing the root node alonggwith NULL in the queue to mark end of the level
+    // Pushing the root node alongwith NULL in the queue to mark end of the level
     q.push(root);
     q.push(NULL);
     while(!q.empty()) {
