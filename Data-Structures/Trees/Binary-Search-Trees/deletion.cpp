@@ -25,7 +25,7 @@ Node* deleteNode(Node* root, int key) {
         else if(key > root->data) {
             root->right = deleteNode(root->right, key);  
         }
-        // If root itself is to be deleted
+        // If root itself is to be deleted (or we have reached the node to be deleted)
         else {
             // For 0 child, root is leaf node, return NULL
             if(root->left == NULL && root->right == NULL) {
@@ -36,7 +36,7 @@ Node* deleteNode(Node* root, int key) {
                 return root->left ? root->left : root->right;
             }
             // For 2 children, find minimum of right side or maximum of left side
-            // and put that dataue in root
+            // and put that data in root
             Node* temp = root->left;
             while(temp->right != NULL) 
                 temp = temp->right; 

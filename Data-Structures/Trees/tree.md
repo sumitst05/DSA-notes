@@ -30,7 +30,7 @@ Segment trees are a type of tree data structure that are used to efficiently per
 
 #### AVL Tree
 
-An AVL tree is a self-balancing binary search tree where the height of the left and right subtrees of each node differs by at most one. This property ensures that the tree remains efficient for various operations, such as searching and inserting.
+An AVL tree is a self-balancing binary search tree named after its inventors Adelson-Velsky and Landis. In an AVL tree, the heights of the two child subtrees of any node differ by at most one. If, at any time during an insertion or a deletion operation, the AVL property is violated (i.e., the heights of the left and right subtrees differ by more than one), rebalancing is performed to restore the property.
 
 #### Red-Black Tree
 
