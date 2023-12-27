@@ -20,6 +20,15 @@ The process of transforming an array into a heap, maintaining the heap propertie
 
 Heaps support efficient insertion and extraction of the minimum (in a min heap) or maximum (in a max heap) element in O(log n) time, where 'n' is the number of elements in the heap.
 
+#### 6. Parent-Child Relationship:
+
+The relationship between a parent node at index ‘i’ and its children is given by the formulas:
+
+- left child at index `2i+1`
+- right child at index `2i+2`
+
+for 0-based indexing of node numbers.
+
 #### 6. Priority Queue:
 
 Heaps are often used to implement priority queues, where elements with higher (or lower) priority can be efficiently extracted.
