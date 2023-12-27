@@ -79,14 +79,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Shortest path algorithms (Dijkstra's algorithm, Bellman-Ford algorithm)
 - Minimum spanning tree algorithms (Prim's algorithm, Kruskal's algorithm)
 
-### Hash Tables
-
-- Introduction to Hash Tables
-- Hash Function
-- Operations on Hash Tables
-- Collision Handling
-- Time and Space Complexity Analysis
-
 ## Algorithms
 
 ### Searching
