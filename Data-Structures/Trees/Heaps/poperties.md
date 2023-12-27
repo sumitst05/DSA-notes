@@ -29,19 +29,19 @@ The relationship between a parent node at index ‘i’ and its children is give
 
 for 0-based indexing of node numbers.
 
-#### 6. Priority Queue:
+#### 7. Priority Queue:
 
 Heaps are often used to implement priority queues, where elements with higher (or lower) priority can be efficiently extracted.
 
-#### 7. Heap Sort:
+#### 8. Heap Sort:
 
 Heap data structure is used to implement heap sort, a comparison-based sorting algorithm with O(n log n) time complexity.
 
-#### 8. Space Efficiency:
+#### 9. Space Efficiency:
 
 Heaps can be represented using arrays, providing a space-efficient representation compared to other tree structures.
 
-#### 9. Applications:
+#### 10. Applications:
 
 Heaps have applications in various algorithms, such as Dijkstra's shortest path algorithm, Prim's minimum spanning tree algorithm, and Huffman coding.
 
