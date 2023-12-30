@@ -76,8 +76,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Types of graphs (undirected, directed, weighted, unweighted, etc.)
 - Graph representation (adjacency matrix, adjacency list)
 - Graph traversal (DFS, BFS)
-- Shortest path algorithms (Dijkstra's algorithm, Bellman-Ford algorithm)
-- Minimum spanning tree algorithms (Prim's algorithm, Kruskal's algorithm)
 
 ## Algorithms
 
@@ -120,8 +118,7 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 
 - Introduction to greedy algorithms
 - Greedy algorithm design techniques (activity selection, Huffman coding, etc.)
-- Examples of greedy algorithms (Dijkstra's algorithm, Kruskal's algorithm, etc.)
+- Examples of greedy algorithms (Dijkstra's algorithm, Prim's and Kruskal's algorithm, etc.)
 - Time and space complexity analysis of greedy algorithms
 
 Feel free to use these notes
-
