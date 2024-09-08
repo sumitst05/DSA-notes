@@ -77,8 +77,8 @@ private:
         int pVal = this->data[pIdx];
         int val = this->data[idx];
 
-        // if current node's value is lesser than it's parent's value then it
-        // deserves to be on it's parent's position (since it is a minHeap)
+        // if current node's value is greater than it's parent's value then it
+        // deserves to be on it's parent's position (since it is a maxHeap)
         if(val > pVal) {
             // swap positions
             swap(this->data[idx], this->data[pIdx]);
@@ -103,12 +103,12 @@ private:
             return;
         }
 
-        // get the minimum out of current, left and right nodes to find out who
+        // get the maximum out of current, left and right nodes to find out who
         // will become the parent
         int maximum = max({ lVal, val, rVal });
 
-        // if left child is the minimum, make it the parent and heapify down,
-        // else if right child is the minimum, makie it the parent and heapify
+        // if left child is the maximum, make it the parent and heapify down,
+        // else if right child is the maximum, makie it the parent and heapify
         // down 
         if(lVal == maximum) {
             swap(this->data[idx], this->data[lIdx]);
