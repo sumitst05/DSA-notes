@@ -83,7 +83,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 
 - Linear search
 - Binary search
-- Interpolation search
 - Time and space complexity analysis of search algorithms
 
 ### Sorting
@@ -95,7 +94,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Quick sort
 - Heap sort
 - Counting sort
-- Radix sort
 - Time and space complexity analysis of sorting algorithms
 - Comparison of sorting algorithms
 
@@ -104,12 +102,11 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Introduction to recursion
 - Recursive algorithms (factorial, Fibonacci, etc.)
 - Time and space complexity analysis of recursive algorithms
-- Recursive vs iterative algorithms
 
 ### Dynamic Programming
 
 - Introduction to dynamic programming
-- Memorization and tabulation
+- Memoization and tabulation
 - Top-down and bottom-up approaches
 - Examples of dynamic programming problems (knapsack problem, longest common subsequence, etc.)
 - Time and space complexity analysis of dynamic programming algorithms
