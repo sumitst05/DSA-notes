@@ -3,144 +3,133 @@ using namespace std;
 
 class MaxHeap {
 public:
-    MaxHeap() {}
+  MaxHeap() {}
 
-    // size of maxHeap
-    int length() {
-        return this->data.size();
+  // size of maxHeap
+  int length() { return this->data.size(); }
+
+  // is maxHeap empty?
+  bool empty() { return this->data.empty(); }
+
+  // while insertion, the element is inserted at the bottomost position in the
+  // maxHeap and from there it makes it's way up to the correct position by
+  // heapifying upwards
+  void insert(int val) {
+    this->data.push_back(val);
+    this->heapifyUp(this->length() - 1);
+  }
+
+  // removal in a maxHeap basically fetches the topmost node and then the heap
+  // preforms a heapify down in order to put the new maximum element at the
+  // topmost position
+  int remove() {
+    if (this->length() == 0) {
+      cerr << "Heap is empty!" << '\n';
+      return -1;
     }
 
-    // is maxHeap empty?
-    bool empty() {
-        return this->data.empty();
-    }
+    // store the maximum element (top of heap)
+    int out = this->data[0];
 
-    // while insertion, the element is inserted at the bottomost position in the
-    // maxHeap and from there it makes it's way up to the correct position by
-    // heapifying upwards
-    void insert(int val) {
-        this->data.push_back(val);
-        this->heapifyUp(this->length() - 1);
-    }
+    // swap the top of heap with the last element in heap array
+    swap(this->data[0], this->data.back());
+    this->data.pop_back();
 
-    // removal in a maxHeap basically fetches the topmost node and then the heap
-    // preforms a heapify down in order to put the new maximum element at the
-    // topmost position
-    int remove() {
-        if(this->length() == 0) {
-            cerr << "Heap is empty!" << '\n';
-            return -1;
-        }
+    // perform heapify down to get new minimum
+    this->heapifyDown(0);
 
-        // store the maximum element (top of heap)
-        int out = this->data[0];
-
-        // swap the top of heap with the last element in heap array
-        swap(this->data[0], this->data.back());
-        this->data.pop_back();
-        
-        // perform heapify down to get new minimum 
-        this->heapifyDown(0);
-
-        // retutn stored minimum value
-        return out;
-    }
-
+    // retutn stored minimum value
+    return out;
+  }
 
 private:
-    vector<int> data;
+  vector<int> data;
 
-    // gets the index of parent of a node
-    int parent(int idx) {
-        return (idx - 1) / 2;
+  // gets the index of parent of a node
+  int parent(int idx) { return (idx - 1) / 2; }
+
+  // gets the left child index of a node
+  int leftChild(int idx) { return 2 * idx + 1; }
+
+  // gets the right child index of a node
+  int rightChild(int idx) { return 2 * idx + 2; }
+
+  void heapifyUp(int idx) {
+    // if heap is empty no need to heapify!
+    if (this->data.size() == 0) {
+      return;
     }
 
-    // gets the left child index of a node
-    int leftChild(int idx) {
-        return 2 * idx + 1;
+    // store parent's index, parent's value, current node's value
+    int pIdx = this->parent(idx);
+
+    int pVal = this->data[pIdx];
+    int val = this->data[idx];
+
+    // if current node's value is greater than it's parent's value then it
+    // deserves to be on it's parent's position (since it is a maxHeap)
+    if (val > pVal) {
+      // swap positions
+      swap(this->data[idx], this->data[pIdx]);
+      // heapify up to maintain heap order
+      this->heapifyUp(pIdx);
+    }
+  }
+
+  void heapifyDown(int idx) {
+    // store left child's index and value, right child's index and value,
+    // and the current node's value
+    int lIdx = this->leftChild(idx);
+    int rIdx = this->rightChild(idx);
+
+    int lVal = this->data[lIdx];
+    int rVal = this->data[rIdx];
+    int val = this->data[idx];
+
+    // if current node's index is mode than the size of out heap (out of
+    // bounds) then no need to heapify down
+    if (idx >= this->length() - 1 || lIdx >= this->length() - 1) {
+      return;
     }
 
-    // gets the right child index of a node
-    int rightChild(int idx) {
-        return 2 * idx + 2;
+    // get the maximum out of current, left and right nodes to find out who
+    // will become the parent
+    int maximum = max({lVal, val, rVal});
+
+    // if left child is the maximum, make it the parent and heapify down,
+    // else if right child is the maximum, makie it the parent and heapify
+    // down
+    if (lVal == maximum) {
+      swap(this->data[idx], this->data[lIdx]);
+      this->heapifyDown(lIdx);
+    } else if (rVal == maximum) {
+      swap(this->data[idx], this->data[rIdx]);
+      this->heapifyDown(rIdx);
     }
-
-    void heapifyUp(int idx) {
-        // if heap is empty no need to heapify!
-        if(this->data.size() == 0) {
-            return;
-        }
-
-        // store parent's index, parent's value, current node's value
-        int pIdx = this->parent(idx);
-
-        int pVal = this->data[pIdx];
-        int val = this->data[idx];
-
-        // if current node's value is greater than it's parent's value then it
-        // deserves to be on it's parent's position (since it is a maxHeap)
-        if(val > pVal) {
-            // swap positions
-            swap(this->data[idx], this->data[pIdx]);
-            // heapify up to maintain heap order
-            this->heapifyUp(pIdx);
-        }
-    }
-
-    void heapifyDown(int idx) {
-        // store left child's index and value, right child's index and value,
-        // and the current node's value
-        int lIdx = this->leftChild(idx);
-        int rIdx = this->rightChild(idx);
-
-        int lVal = this->data[lIdx];
-        int rVal = this->data[rIdx];
-        int val = this->data[idx];
-
-        // if current node's index is mode than the size of out heap (out of
-        // bounds) then no need to heapify down
-        if(idx >= this->length() - 1 || lIdx >= this->length() - 1) {
-            return;
-        }
-
-        // get the maximum out of current, left and right nodes to find out who
-        // will become the parent
-        int maximum = max({ lVal, val, rVal });
-
-        // if left child is the maximum, make it the parent and heapify down,
-        // else if right child is the maximum, makie it the parent and heapify
-        // down 
-        if(lVal == maximum) {
-            swap(this->data[idx], this->data[lIdx]);
-            this->heapifyDown(lIdx);
-        } else if(rVal == maximum) {
-            swap(this->data[idx], this->data[rIdx]);
-            this->heapifyDown(rIdx);
-        }
-    }
+  }
 };
 
 int main() {
-    MaxHeap maxHeap;
+  MaxHeap maxHeap;
 
-    maxHeap.insert(9);
-    maxHeap.insert(7);
-    maxHeap.insert(2);
-    maxHeap.insert(4);
-    maxHeap.insert(1);
-    maxHeap.insert(6);
-    maxHeap.insert(3);
-    maxHeap.insert(5);
-    maxHeap.insert(8);
+  maxHeap.insert(9);
+  maxHeap.insert(7);
+  maxHeap.insert(2);
+  maxHeap.insert(4);
+  maxHeap.insert(1);
+  maxHeap.insert(6);
+  maxHeap.insert(3);
+  maxHeap.insert(5);
+  maxHeap.insert(8);
 
-    cout << maxHeap.length() << '\n';
+  cout << maxHeap.length() << '\n';
 
-    while(!maxHeap.empty()) {
-        cout << maxHeap.remove() << " ";
-    }
-    cout << '\n';
+  while (!maxHeap.empty()) {
+    cout << maxHeap.remove() << " ";
+  }
+  cout << '\n';
 
-    cout << maxHeap.length() << '\n';
+  cout << maxHeap.length() << '\n';
 
-    return 0;
+  return 0;
 }
