@@ -93,7 +93,6 @@ This repository contains my notes on Data Structures and Algorithms (DSA) that I
 - Merge sort
 - Quick sort
 - Heap sort
-- Counting sort
 - Time and space complexity analysis of sorting algorithms
 - Comparison of sorting algorithms
 
