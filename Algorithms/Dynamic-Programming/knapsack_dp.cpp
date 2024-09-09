@@ -1,6 +1,5 @@
 /*
- * The 0/1 Knapsack Problem is a classic optimization problem in computer.
- * The problem is be described as follows:
+ * The 0/1 Knapsack Problem is be described as follows:
  *
  * Given a set of items, each with a specific weight and profit, and a knapsack
  * with a maximum weight capacity, determine the maximum profit that can be
