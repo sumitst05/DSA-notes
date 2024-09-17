@@ -26,7 +26,7 @@ void quickSort(vector<int> &arr, int l, int r) {
     int pivot = partition(arr, l, r);
 
     quickSort(arr, l, pivot - 1);
-    quickSort(arr, pivot, r);
+    quickSort(arr, pivot + 1, r);
   }
 }
 
