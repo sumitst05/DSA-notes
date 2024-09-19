@@ -16,7 +16,6 @@
     - Simple queue: The simple queue is the most basic implementation of a queue, where the elements are stored in a linear sequence and the front and rear indices are adjusted accordingly after each enqueue and dequeue operation. 
     - Circular queue: A circular queue is an improvement over the simple queue that solves the problem of unused spaces in the queue after dequeuing elements. It uses a circular array to store the elements, and the front and rear indices are adjusted accordingly after each enqueue and dequeue operation. 
     - Double-ended queue: A double-ended queue (deque) is a generalization of the queue data structure, where elements can be inserted and removed from both ends. It supports the operations of both stacks and queues and can be implemented using arrays or linked lists. 
-    - Priority queue: A priority queue is a variation of the queue data structure in which each element is associated with a priority and is served according to its priority. Elements with higher priority are dequeued first, and in the case of equal priorities, they follow the FIFO principle. 
 
 ## 4. Uses
 
