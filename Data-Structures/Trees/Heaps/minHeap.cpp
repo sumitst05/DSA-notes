@@ -80,15 +80,16 @@ private:
     int lIdx = this->leftChild(idx);
     int rIdx = this->rightChild(idx);
 
+    // if current node's index is mode than the size of out heap (out of
+    // bounds) then no need to heapify down
+    if (idx >= this->length() || lIdx >= this->length() ||
+        rIdx >= this->length()) {
+      return;
+    }
+
     int lVal = this->data[lIdx];
     int rVal = this->data[rIdx];
     int val = this->data[idx];
-
-    // if current node's index is mode than the size of out heap (out of
-    // bounds) then no need to heapify down
-    if (idx >= this->length() - 1 || lIdx >= this->length() - 1) {
-      return;
-    }
 
     // get the minimum out of current, left and right nodes to find out who
     // will become the parent
